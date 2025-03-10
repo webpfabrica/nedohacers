@@ -1,0 +1,264 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+  }
+  
+  body {
+    background-color: #1e2429;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Шапка */
+  header {
+    background: #1e2429;
+    padding: 15px 0;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Основной контейнер */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e2429;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  
+  /* Карточки */
+  .card {
+    background: #1e2429;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  
+  /* Кнопки */
+  button {
+    background-color: #1e2429;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #1e2429;
+  }
+  
+  /* Контейнер кнопок */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+    header h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Стили для заставки */
+  #splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1e2429;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+  }
+  
+  /* Слайды */
+  .slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Эффект исчезновения */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* По умолчанию скрываем основное содержимое */
+  .hidden {
+    display: none;
+  }
+  
+  /* BIOS-стиль */
+  body {
+    background: #1e2429;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Заставка */
+  #splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1e2429;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  /* Слайды */
+  .slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Исчезновение */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* По умолчанию скрываем основное содержимое */
+  .hidden {
+    display: none;
+  }
+  
+  /* BIOS-стиль */
+  body {
+    background: #1e2429;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Заставка */
+  #splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1e2429;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  /* Слайды */
+  .slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Исчезновение */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* По умолчанию скрываем основное содержимое */
+  .hidden {
+    display: none;
+  }
+  
+  /* BIOS меню */
+  #bios-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid white;
+  }
+  
+  .tab.active {
+    background: white;
+    color: #1e2429;
+  }
+  
+  /* Контент вкладок */
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* По умолчанию (для ноутбуков и ПК) изображения остаются 600px */
+  img {
+    width: 600px;
+    height: auto;
+  }
+  
+  /* Для экранов меньше 768px (телефоны) уменьшаем ширину изображений */
+  @media (max-width: 768px) {
+    img {
+        width: 100%; /* Чтобы изображения адаптировались к ширине экрана */
+        max-width: 300px; /* Максимальная ширина, например 300px */
+        height: auto; /* Сохраняем пропорции */
+    }
+  }
